@@ -1,0 +1,20 @@
+{
+  "name": "wa-channel-song-upload-bot",
+  "version": "1.0.0",
+  "description": "Simple Whatsapp channel songs upload bot",
+  "main": "index.js",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "@hapi/boom": "^10.0.1",
+    "jimp": "^1.6.0",
+    "pino": "^8.19.0",
+    "megajs": "^1.1.0",
+    "axios": "^1.6.7",
+    "express": "latest",
+    "node-fetch": "^2.7.0",
+    "fs-extra": "^11.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

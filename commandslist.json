@@ -1,0 +1,6 @@
+{
+  "MAIN": [
+    { "name": "ping", "description": "Check bot speed" },
+    { "name": "menu", "description": "Check bot commands" }
+  ]
+}
