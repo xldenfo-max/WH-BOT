@@ -30,7 +30,11 @@ if (!fs.existsSync("./" + SESSION_DIR)) {
 
 // SESSION ID DOWNLOAD PATH BASE64, MEGA
 const sessionFilePath = path.join(__dirname, SESSION_DIR, 'creds.json');
-const sessionIdSandipa = config.SESSION_ID.split(config.SESSION_NAME)[1];
+
+// Fixed Session ID logic: Check if it starts with the name before splitting
+const sessionIdSandipa = config.SESSION_ID.startsWith(config.SESSION_NAME) 
+    ? config.SESSION_ID.split(config.SESSION_NAME)[1] 
+    : config.SESSION_ID;
 
 if (!fs.existsSync(sessionFilePath)) {
     if (!config.SESSION_ID) {
